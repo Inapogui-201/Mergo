@@ -99,22 +99,23 @@ const HeroSection = () => {
               transition={{ delay: 0.8, duration: 0.6 }}
             >
               <Link 
-                to="/vote" 
+                to="/candidates" 
                 className="px-8 py-4 bg-[#2AB4C4] text-white rounded-lg shadow-lg hover:bg-[#229DAB] transition-all duration-300 flex items-center justify-center gap-2 font-medium text-lg w-full sm:w-auto"
               >
                 <Vote size={20} />
                 Voter maintenant
               </Link>
               <Link 
-                to="/candidates" 
+                to="/about" 
                 className="px-8 py-4 bg-white text-gray-800 border border-gray-200 rounded-lg hover:bg-gray-50 transition-all duration-300 flex items-center justify-center gap-2 font-medium text-lg w-full sm:w-auto"
               >
-                Voir les candidates
+               En savoir plus
               </Link>
             </motion.div>
             
             {/* Badges flottantes */}
-            <motion.div 
+            {/* 
+             <motion.div 
               className="flex flex-wrap gap-4 mt-10 justify-center lg:justify-start"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -129,6 +130,9 @@ const HeroSection = () => {
                 <span className="text-sm font-medium">Codes promo disponibles</span>
               </div>
             </motion.div>
+            
+            */}
+           
           </motion.div>
 
           {/* Image ou illustration */}
@@ -144,7 +148,8 @@ const HeroSection = () => {
                 alt="Concours de vote avec Mergo" 
                 className="w-full h-auto"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-6">
+              {/* 
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-6">
                 <div className="text-white font-bold text-2xl mb-2">Vote en direct</div>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2">
@@ -168,12 +173,15 @@ const HeroSection = () => {
                   <ArrowRight size={16} />
                 </Link>
               </div>
+              */}
+          
             </div>
           </motion.div>
         </div>
         
         {/* Statistiques en bas */}
-        <motion.div 
+        {/* 
+         <motion.div 
           className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -192,6 +200,8 @@ const HeroSection = () => {
             <div className="text-gray-600">Jours restants</div>
           </div>
         </motion.div>
+        */}
+       
       </div>
     </div>
   );

@@ -7,11 +7,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Candidates", path: "/candidatures" },
+    { name: "Accueil", path: "/" },
+    { name: "Candidates", path: "/candidates" },
     { name: "A propos", path: "/about" },
     { name: "Contact", path: "/contact" },
-    ];
+  ];
 
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-lg font-sans">

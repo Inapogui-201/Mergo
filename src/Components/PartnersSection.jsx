@@ -1,48 +1,85 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Handshake, ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import ORANGE from "/orange.png";
+import SUPEMIR from "/supemir.png";
+import SMART from "/smartafrica.jpeg";
+import ETANDO from "/etando.jpg";
+import IDJ from "/idj.jpg"; 
+import EML from "/eml.jpg";
+import JOEBRAIDS from "/joebraids.png";
+
 
 const PartnersSection = () => {
   // État pour le carrousel sur mobile
   const [currentSlide, setCurrentSlide] = useState(0);
   // Définir l'état pour suivre la largeur de l'écran
   const [isMobile, setIsMobile] = useState(false);
-  
+
   // Simuler des données de partenaires
   const partners = [
     {
       id: 1,
-      name: "Etando",
-      logo: "/api/placeholder/150/80",
-      description: "Entreprise centrer dans l'immobilisation",
-      website: "https://example.com/tech"
+      name: "Orange",
+      logo: ORANGE,
+      description: "Orange est une entreprise française de télécommunications",
+      website: "https://example.com/",
     },
     {
       id: 2,
-      name: "LaMergo",
-      logo: "/api/placeholder/150/80",
+      name: "Supemir",
+      logo: SUPEMIR,
       description: "Diffusion et médias numériques",
-      website: "https://example.com/media"
+      website: "https://example.com/media",
     },
     {
       id: 3,
-      name: "Supemir",
-      logo: "/api/placeholder/150/80",
+      name: "Smart Africa",
+      logo: SMART,
       description: "Partenaire écologique officiel",
-      website: "https://example.com/eco"
+      website: "https://example.com/eco",
     },
+    {
+      id: 4,
+      name: "Etando",
+      logo: ETANDO,
+      description: "Partenaire écologique officiel" ,
+      website: "https://example.com/eco",
+    },
+    {
+      id: 5,
+      name: "IDJ",
+      logo: IDJ,
+      description: "Partenaire écologique officiel",
+      website: "https://example.com/eco",
+    },
+    {
+      id: 6,
+      name: "EML",
+      logo: EML,
+      description: "Partenaire écologique officiel",
+      website: "https://example.com/eco",
+    },
+    {
+      id: 7,
+      name : "Joe Braids",
+      logo: JOEBRAIDS,
+      description: "Partenaire écologique officiel",
+      website: "https://example.com/eco",
+    },
+   
   ];
 
   // Fonction pour avancer dans le carrousel
   const nextSlide = () => {
-    setCurrentSlide((prev) => 
+    setCurrentSlide((prev) =>
       prev === Math.ceil(partners.length / 2) - 1 ? 0 : prev + 1
     );
   };
 
   // Fonction pour reculer dans le carrousel
   const prevSlide = () => {
-    setCurrentSlide((prev) => 
+    setCurrentSlide((prev) =>
       prev === 0 ? Math.ceil(partners.length / 2) - 1 : prev - 1
     );
   };
@@ -52,20 +89,20 @@ const PartnersSection = () => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     // Vérifier à l'initialisation
     checkScreenSize();
-    
+
     // Ajouter un écouteur d'événement pour le redimensionnement
-    window.addEventListener('resize', checkScreenSize);
-    
+    window.addEventListener("resize", checkScreenSize);
+
     // Nettoyer l'écouteur d'événement lors du démontage
-    return () => window.removeEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   return (
-    <section className="py-16 bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 mb-5 bg-gradient-to-b from-white to-gray-50">
+      <div className="container mx-auto px-4  sm:px-6 lg:px-8">
         {/* En-tête de la section */}
         <div className="text-center mb-12">
           <motion.div
@@ -78,7 +115,7 @@ const PartnersSection = () => {
             <Handshake className="inline-block mr-2" size={16} />
             Nos Partenaires
           </motion.div>
-          
+
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -86,9 +123,10 @@ const PartnersSection = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
           >
-            Ils <span className="text-[#2AB4C4]">soutiennent</span> notre concours
+            Ils <span className="text-[#2AB4C4]">soutiennent</span> notre
+            concours
           </motion.h2>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -96,22 +134,22 @@ const PartnersSection = () => {
             viewport={{ once: true }}
             className="text-gray-600 max-w-2xl mx-auto"
           >
-            Découvrez les entreprises et organisations qui rendent possible ce concours 
-            de vote et contribuent à son succès.
+            Découvrez les entreprises et organisations qui rendent possible ce
+            concours de vote et contribuent à son succès.
           </motion.p>
         </div>
 
         {/* Contrôles de navigation pour mobile */}
         {isMobile && (
           <div className="flex justify-center gap-4 mb-6">
-            <button 
+            <button
               onClick={prevSlide}
               className="p-2 rounded-full bg-gray-100 hover:bg-[#2AB4C4]/10 text-gray-600 hover:text-[#2AB4C4] transition-colors"
               aria-label="Précédent"
             >
               <ChevronLeft size={20} />
             </button>
-            <button 
+            <button
               onClick={nextSlide}
               className="p-2 rounded-full bg-gray-100 hover:bg-[#2AB4C4]/10 text-gray-600 hover:text-[#2AB4C4] transition-colors"
               aria-label="Suivant"
@@ -122,43 +160,48 @@ const PartnersSection = () => {
         )}
 
         {/* Grille des partenaires */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
           className="relative overflow-hidden"
         >
-          <div 
+          <div
             className={`grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-500 ease-in-out`}
-            style={{ 
-              transform: isMobile ? `translateX(-${currentSlide * 100}%)` : 'none'
+            style={{
+              transform: isMobile
+                ? `translateX(-${currentSlide * 100}%)`
+                : "none",
             }}
           >
             {partners.map((partner) => (
               <motion.div
                 key={partner.id}
-                whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)" }}
+                whileHover={{
+                  y: -5,
+                  boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
+                }}
                 transition={{ duration: 0.2 }}
                 className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
                 <div className="flex flex-col items-center text-center h-full">
-                  <div className="mb-4 p-4 bg-gray-50 rounded-lg w-full flex items-center justify-center">
-                    <img 
+                  {/* Logo agrandi */}
+                  <div className="mb-4 rounded-lg w-full flex items-center justify-center">
+                    <img
                       src={partner.logo}
                       alt={`${partner.name} logo`}
-                      className="h-16 object-contain"
+                      className="h-40 object-contain" // Augmenter la taille de l'image
                     />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  {/* Nom du partenaire */}
+                  <h3 className="text-xl font-semibold text-gray-800 mb-4">
                     {partner.name}
                   </h3>
-                  <p className="text-gray-600 mb-4 flex-grow">
-                    {partner.description}
-                  </p>
-                  <a 
-                    href={partner.website} 
-                    target="_blank" 
+                  {/* Bouton "Visiter le site" */}
+                  <a
+                    href={partner.website}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-[#2AB4C4] hover:text-[#229DAB] font-medium transition-colors mt-auto"
                   >
@@ -174,16 +217,20 @@ const PartnersSection = () => {
         {/* Indicateur de diapositives pour mobile */}
         {isMobile && (
           <div className="flex justify-center gap-2 mt-6">
-            {Array.from({ length: Math.ceil(partners.length / 2) }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`h-2 rounded-full transition-all ${
-                  currentSlide === index ? "w-8 bg-[#2AB4C4]" : "w-2 bg-gray-300"
-                }`}
-                aria-label={`Aller à la diapositive ${index + 1}`}
-              />
-            ))}
+            {Array.from({ length: Math.ceil(partners.length / 2) }).map(
+              (_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`h-2 rounded-full transition-all ${
+                    currentSlide === index
+                      ? "w-8 bg-[#2AB4C4]"
+                      : "w-2 bg-gray-300"
+                  }`}
+                  aria-label={`Aller à la diapositive ${index + 1}`}
+                />
+              )
+            )}
           </div>
         )}
 
@@ -198,8 +245,8 @@ const PartnersSection = () => {
           <p className="text-gray-700 mb-6">
             Vous souhaitez devenir partenaire de notre concours de vote ?
           </p>
-          <a 
-            href="/contact" 
+          <a
+            href="/contact"
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#2AB4C4] text-white rounded-lg hover:bg-[#229DAB] transition-all duration-300 shadow-md hover:shadow-lg"
           >
             Devenir partenaire

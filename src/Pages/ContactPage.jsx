@@ -58,19 +58,11 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Adresse</h3>
-                  <p className="text-gray-600">Atlantic II<br />Casablanca, Maroc</p>
+                  <p className="text-gray-600">Casablanca, Maroc</p>
                 </div>
               </div>
               
-              <div className="flex items-start">
-                <div className="bg-[#2AB4C4]/10 p-3 rounded-lg mr-4">
-                  <Clock size={24} className="text-[#2AB4C4]" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-1">Heures d'ouverture</h3>
-                  <p className="text-gray-600">Lundi - Vendredi: 9h00 - 18h00<br />Samedi: 9h00 - 13h00</p>
-                </div>
-              </div>
+            
             </div>
           </div>
           
@@ -110,6 +102,7 @@ const ContactPage = () => {
                   <option value="voting">Aide avec les votes</option>
                   <option value="promo">Codes promotionnels</option>
                   <option value="general">Question générale</option>
+                  <option value="other">Autre</option>
                 </select>
               </div>
               
@@ -150,10 +143,10 @@ const ContactPage = () => {
               <Phone size={18} className="mr-2" /> +212 629 482 958
             </a>
             <a 
-              href="mailto:contact@empower2025.com" 
+              href="mailto:lamergogroup@gmail.com" 
               className="px-6 py-3 bg-white border border-[#2AB4C4] text-[#2AB4C4] font-medium rounded-lg hover:bg-[#2AB4C4]/5 transition-colors inline-flex items-center justify-center"
             >
-              <Mail size={18} className="mr-2" /> contact@empower2025.com
+              <Mail size={18} className="mr-2" /> lamergogroup@gmail.com
             </a>
           </div>
         </div>

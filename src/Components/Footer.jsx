@@ -8,7 +8,8 @@ import {
   Vote, 
   CreditCard, 
   ShoppingBag, 
-  HelpCircle 
+  HelpCircle, 
+  CircleHelp
 } from "lucide-react";
 
 const Footer = () => {
@@ -26,7 +27,7 @@ const Footer = () => {
               <span className="text-2xl font-bold">LaMergo Vote</span>
             </div>
             <p className="text-gray-300 mb-4">
-              Plateforme de vote en ligne sécurisée pour soutenir votre candidate préférée.
+            Pionniers d'une Nouvelle Ère d'Innovation et de Performance. Nous transformons vos idées en réalité.
             </p>
             <div className="flex items-center gap-4 mb-6">
               <a 
@@ -54,7 +55,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 text-gray-300 mb-2">
               <Mail size={16} className="text-[#2AB4C4]" />
               <a href="mailto:lamergogroup@gmail.com" className="hover:text-[#2AB4C4] transition-colors">
-                lamergogroup@gmail.com
+              lamergogroup@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-3 text-gray-300">
@@ -79,16 +80,8 @@ const Footer = () => {
                   Candidates
                 </Link>
               </li>
-              <li>
-                <Link to="/vote" className="text-gray-300 hover:text-[#2AB4C4] transition-colors duration-300 flex items-center gap-2">
-                  Voter
-                </Link>
-              </li>
-              <li>
-                <Link to="/leaderboard" className="text-gray-300 hover:text-[#2AB4C4] transition-colors duration-300 flex items-center gap-2">
-                  Classement
-                </Link>
-              </li>
+             
+             
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-[#2AB4C4] transition-colors duration-300 flex items-center gap-2">
                   À propos
@@ -103,6 +96,7 @@ const Footer = () => {
           </div>
 
           {/* Informations sur le vote */}
+          
           <div>
             <h3 className="text-lg font-semibold mb-4 pb-2 border-b border-gray-700">Comment Voter</h3>
             <ul className="space-y-4">
@@ -110,51 +104,38 @@ const Footer = () => {
                 <Vote size={20} className="text-[#2AB4C4] mt-1 flex-shrink-0" />
                 <span className="text-gray-300">Votez une fois gratuitement</span>
               </li>
-              <li className="flex items-start gap-2">
-                <CreditCard size={20} className="text-[#2AB4C4] mt-1 flex-shrink-0" />
-                <span className="text-gray-300">Achetez des votes supplémentaires (5 votes = 1$)</span>
+              <li>
+                <Link to="/help/how-to-vote" className="flex items-start gap-2 hover:text-[#2AB4C4]">
+                    <CircleHelp size={20} className="text-[#2AB4C4]  mt-1 flex-shrink-0" />
+                <span className="text-gray-300 hover:text-[#2AB4C4]">Comment faire pour voter</span>
+                </Link>
+            
               </li>
-              <li className="flex items-start gap-2">
-                <ShoppingBag size={20} className="text-[#2AB4C4] mt-1 flex-shrink-0" />
-                <span className="text-gray-300">Utilisez un code promo après l'achat d'un objet</span>
-              </li>
+          
             </ul>
-            <Link 
-              to="/vote" 
-              className="inline-flex items-center gap-2 mt-4 px-5 py-2 bg-[#2AB4C4] text-white rounded-lg hover:bg-[#229DAB] transition-colors duration-300"
-            >
-              Voter maintenant
-            </Link>
+        
           </div>
+        
+          
 
           {/* Aide et support */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 pb-2 border-b border-gray-700">Aide & Support</h3>
+            <h3 className="text-lg font-emibold mb-4 pb-2 border-b border-gray-700">Aide & Support</h3>
             <ul className="space-y-3">
+           
               <li>
-                <Link to="/faq" className="text-gray-300 hover:text-[#2AB4C4] transition-colors duration-300 flex items-center gap-2">
-                  <HelpCircle size={16} className="text-[#2AB4C4]" />
-                  FAQ
-                </Link>
-              </li>
-              <li>
-                <Link to="/terms" className="text-gray-300 hover:text-[#2AB4C4] transition-colors duration-300 flex items-center gap-2">
+                <Link to="/help/terms-of-use" className="text-gray-300 hover:text-[#2AB4C4] transition-colors duration-300 flex items-center gap-2">
                   <HelpCircle size={16} className="text-[#2AB4C4]" />
                   Conditions d'utilisation
                 </Link>
               </li>
               <li>
-                <Link to="/privacy" className="text-gray-300 hover:text-[#2AB4C4] transition-colors duration-300 flex items-center gap-2">
+                <Link to="/help/privacy-policy" className="text-gray-300 hover:text-[#2AB4C4] transition-colors duration-300 flex items-center gap-2">
                   <HelpCircle size={16} className="text-[#2AB4C4]" />
                   Politique de confidentialité
                 </Link>
               </li>
-              <li>
-                <Link to="/help" className="text-gray-300 hover:text-[#2AB4C4] transition-colors duration-300 flex items-center gap-2">
-                  <HelpCircle size={16} className="text-[#2AB4C4]" />
-                  Centre d'aide
-                </Link>
-              </li>
+           
             </ul>
             <div className="mt-6 p-4 bg-white/5 rounded-lg">
               <h4 className="font-medium text-[#2AB4C4] mb-2">Besoin d'aide ?</h4>

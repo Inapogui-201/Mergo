@@ -1,5 +1,14 @@
-import React from 'react';
-import { Trophy, Star, Users, Award, Calendar, Globe, BookOpen, Heart } from 'lucide-react';
+import React from "react";
+import {
+  Trophy,
+  Star,
+  Users,
+  Award,
+  Calendar,
+  Globe,
+  BookOpen,
+  Heart,
+} from "lucide-react";
 
 const AboutPage = () => {
   return (
@@ -15,8 +24,13 @@ const AboutPage = () => {
             <div className="inline-block mb-4 px-4 py-1 bg-white/20 rounded-full text-sm font-medium">
               EMPOWER 2025
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">À Propos du Concours</h1>
-            <p className="text-xl opacity-90 mb-8">Célébrer l'excellence et mettre en lumière des talents exceptionnels à travers quatre catégories prestigieuses</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              À Propos du Concours
+            </h1>
+            <p className="text-xl opacity-90 mb-8">
+              Célébrer l'excellence et mettre en lumière des talents
+              exceptionnels à travers quatre catégories prestigieuses
+            </p>
           </div>
         </div>
       </div>
@@ -25,12 +39,20 @@ const AboutPage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Notre Mission</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Notre Mission
+            </h2>
             <p className="text-lg text-gray-700 mb-6">
-              Chez EMPOWER 2025, nous avons pour mission de créer une plateforme qui identifie, célèbre et propulse les talents exceptionnels qui façonnent notre avenir. Notre concours met en valeur l'innovation, le leadership et l'impact social à travers différentes catégories.
+              Chez EMPOWER 2025, nous avons pour mission de créer une plateforme
+              qui identifie, célèbre et propulse les talents exceptionnels qui
+              façonnent notre avenir. Notre concours met en valeur l'innovation,
+              le leadership et l'impact social à travers différentes catégories.
             </p>
             <p className="text-lg text-gray-700">
-              En mettant en lumière ces candidatures remarquables, nous inspirons la prochaine génération et créons des opportunités de reconnaissance, de croissance et de collaboration entre les participantes.
+              En mettant en lumière ces candidatures remarquables, nous
+              inspirons la prochaine génération et créons des opportunités de
+              reconnaissance, de croissance et de collaboration entre les
+              participantes.
             </p>
           </div>
           <div className="bg-gray-50 p-8 rounded-xl">
@@ -41,7 +63,10 @@ const AboutPage = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Excellence</h3>
-                  <p className="text-gray-600">Reconnaître et récompenser les accomplissements exceptionnels dans chaque domaine</p>
+                  <p className="text-gray-600">
+                    Reconnaître et récompenser les accomplissements
+                    exceptionnels dans chaque domaine
+                  </p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -50,7 +75,10 @@ const AboutPage = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Inclusion</h3>
-                  <p className="text-gray-600">Favoriser la diversité des parcours et créer des opportunités équitables</p>
+                  <p className="text-gray-600">
+                    Favoriser la diversité des parcours et créer des
+                    opportunités équitables
+                  </p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -59,7 +87,10 @@ const AboutPage = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">Impact</h3>
-                  <p className="text-gray-600">Mettre en avant les projets qui transforment positivement notre société</p>
+                  <p className="text-gray-600">
+                    Mettre en avant les projets qui transforment positivement
+                    notre société
+                  </p>
                 </div>
               </div>
             </div>
@@ -68,6 +99,7 @@ const AboutPage = () => {
       </div>
 
       {/* Categories Section */}
+      {/* 
       <div className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -183,6 +215,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+      */}
 
       {/* Timeline Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -190,22 +223,29 @@ const AboutPage = () => {
           <div className="inline-block mb-3 px-3 py-1 bg-[#2AB4C4]/10 text-[#2AB4C4] rounded-full text-sm font-medium">
             CALENDRIER
           </div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Déroulement du Concours</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Déroulement du Concours
+          </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Suivez les étapes clés de notre concours, de la nomination des candidates jusqu'à la cérémonie finale
+            Suivez les étapes clés de notre concours, de la nomination des
+            candidates jusqu'à la cérémonie finale
           </p>
         </div>
 
         <div className="relative">
           {/* Vertical line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200"></div>
-          
+
           <div className="space-y-12">
             {/* Phase 1 */}
             <div className="relative flex items-center">
               <div className="flex-1 pr-10 md:pr-16 text-right">
-                <h3 className="text-xl font-bold text-gray-900 mb-1">Nominations</h3>
-                <p className="text-gray-600">Soumission des candidatures et sélection des participantes officielles</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">
+                  Inscription en ligne
+                </h3>
+                <p className="text-gray-600">
+                  Soumettez votre candidature pour participer au concours
+                </p>
               </div>
               <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
                 <div className="border-4 border-white bg-[#2AB4C4] rounded-full h-10 w-10 flex items-center justify-center shadow-md">
@@ -213,15 +253,21 @@ const AboutPage = () => {
                 </div>
               </div>
               <div className="flex-1 pl-10 md:pl-16">
-                <div className="text-[#2AB4C4] font-semibold">15 Janvier - 15 Février 2025</div>
+                <div className="text-[#2AB4C4] font-semibold">
+                  2 Février - 30 Mars 2025
+                </div>
               </div>
             </div>
 
             {/* Phase 2 */}
             <div className="relative flex items-center">
               <div className="flex-1 pr-10 md:pr-16 text-right">
-                <h3 className="text-xl font-bold text-gray-900 mb-1">Période de Vote</h3>
-                <p className="text-gray-600">Ouverture au public pour soutenir les candidates</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">
+                  Délibération du Jury
+                </h3>
+                <p className="text-gray-600">
+                  Évaluation des candidatures par notre panel d'experts
+                </p>
               </div>
               <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
                 <div className="border-4 border-white bg-[#2AB4C4] rounded-full h-10 w-10 flex items-center justify-center shadow-md">
@@ -229,15 +275,21 @@ const AboutPage = () => {
                 </div>
               </div>
               <div className="flex-1 pl-10 md:pl-16">
-                <div className="text-[#2AB4C4] font-semibold">1 Mars - 24 Mars 2025</div>
+                <div className="text-[#2AB4C4] font-semibold">
+                  1 Avril - 10 Avril 2025
+                </div>
               </div>
             </div>
 
             {/* Phase 3 */}
             <div className="relative flex items-center">
               <div className="flex-1 pr-10 md:pr-16 text-right">
-                <h3 className="text-xl font-bold text-gray-900 mb-1">Délibération du Jury</h3>
-                <p className="text-gray-600">Évaluation des candidatures par notre panel d'experts</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">
+                  Séance de formation
+                </h3>
+                <p className="text-gray-600">
+                  Préparation des candidates pour l'Entreprenariat
+                </p>
               </div>
               <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
                 <div className="border-4 border-white bg-[#2AB4C4] rounded-full h-10 w-10 flex items-center justify-center shadow-md">
@@ -245,15 +297,21 @@ const AboutPage = () => {
                 </div>
               </div>
               <div className="flex-1 pl-10 md:pl-16">
-                <div className="text-[#2AB4C4] font-semibold">25 Mars - 27 Mars 2025</div>
+                <div className="text-[#2AB4C4] font-semibold">
+                  19 Avril 2025
+                </div>
               </div>
             </div>
 
-            {/* Phase 4 */}
-            <div className="relative flex items-center">
+             {/* Phase 3 */}
+             <div className="relative flex items-center">
               <div className="flex-1 pr-10 md:pr-16 text-right">
-                <h3 className="text-xl font-bold text-gray-900 mb-1">Cérémonie de Remise des Prix</h3>
-                <p className="text-gray-600">Annonce des gagnantes et célébration des réussites</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">
+                 Conférence de Lancement de vote
+                </h3>
+                <p className="text-gray-600">
+                  Présentation des candidates et de leurs projets et lancement du vote
+                </p>
               </div>
               <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
                 <div className="border-4 border-white bg-[#2AB4C4] rounded-full h-10 w-10 flex items-center justify-center shadow-md">
@@ -261,7 +319,52 @@ const AboutPage = () => {
                 </div>
               </div>
               <div className="flex-1 pl-10 md:pl-16">
-                <div className="text-[#2AB4C4] font-semibold">28 Mars 2025</div>
+                <div className="text-[#2AB4C4] font-semibold">
+                  3 Mai 2025
+                </div>
+              </div>
+            </div>
+
+            {/* Phase 5 */}
+            <div className="relative flex items-center">
+              <div className="flex-1 pr-10 md:pr-16 text-right">
+                <h3 className="text-xl font-bold text-gray-900 mb-1">
+                  Début de vote en ligne
+                </h3>
+                <p className="text-gray-600">
+                  Votez pour vos candidates préférées
+                </p>
+              </div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                <div className="border-4 border-white bg-[#2AB4C4] rounded-full h-10 w-10 flex items-center justify-center shadow-md">
+                  <Calendar size={18} className="text-white" />
+                </div>
+              </div>
+              <div className="flex-1 pl-10 md:pl-16">
+                <div className="text-[#2AB4C4] font-semibold">
+                  {" "}
+                  3 Mai - 26 Mai 2025
+                </div>
+              </div>
+            </div>
+
+            {/* Phase 6 */}
+            <div className="relative flex items-center">
+              <div className="flex-1 pr-10 md:pr-16 text-right">
+                <h3 className="text-xl font-bold text-gray-900 mb-1">
+                  Cérémonie de Remise des Prix
+                </h3>
+                <p className="text-gray-600">
+                  Annonce des gagnantes et célébration des réussites
+                </p>
+              </div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+                <div className="border-4 border-white bg-[#2AB4C4] rounded-full h-10 w-10 flex items-center justify-center shadow-md">
+                  <Calendar size={18} className="text-white" />
+                </div>
+              </div>
+              <div className="flex-1 pl-10 md:pl-16">
+                <div className="text-[#2AB4C4] font-semibold">31 Mai 2025</div>
               </div>
             </div>
           </div>
@@ -275,9 +378,12 @@ const AboutPage = () => {
             <div className="inline-block mb-3 px-3 py-1 bg-white/10 text-white rounded-full text-sm font-medium">
               EMPOWER EN CHIFFRES
             </div>
-            <h2 className="text-3xl font-bold mb-4">L'Impact de Notre Concours</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              L'Impact de Notre Concours
+            </h2>
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-              Découvrez comment notre concours crée un impact significatif dans la communauté
+              Découvrez comment notre concours crée un impact significatif dans
+              la communauté
             </p>
           </div>
 
@@ -308,38 +414,62 @@ const AboutPage = () => {
           <div className="inline-block mb-3 px-3 py-1 bg-[#2AB4C4]/10 text-[#2AB4C4] rounded-full text-sm font-medium">
             FAQ
           </div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Questions Fréquentes</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Questions Fréquentes
+          </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Trouvez les réponses aux questions les plus courantes concernant notre concours
+            Trouvez les réponses aux questions les plus courantes concernant
+            notre concours
           </p>
         </div>
 
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="border border-gray-200 rounded-lg p-6">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Comment les gagnantes sont-elles sélectionnées?</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">
+              Comment les gagnantes sont-elles sélectionnées?
+            </h3>
             <p className="text-gray-600">
-              Les gagnantes sont déterminées par une combinaison des votes du public et des évaluations de notre jury d'experts. Chaque catégorie a des critères spécifiques qui sont utilisés pour évaluer les candidatures.
+              Les gagnantes sont déterminées par une combinaison des votes du
+              public et des évaluations de notre jury d'experts. Chaque
+              catégorie a des critères spécifiques qui sont utilisés pour
+              évaluer les candidatures.
             </p>
           </div>
 
           <div className="border border-gray-200 rounded-lg p-6">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Puis-je proposer une candidate?</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">
+              Puis-je proposer une candidate?
+            </h3>
             <p className="text-gray-600">
-              Absolument! Nous encourageons les nominations de candidates exceptionnelles. Vous pouvez soumettre une nomination via notre formulaire en ligne pendant la période de nomination du 15 janvier au 15 février 2025.
+              Absolument! Nous encourageons les nominations de candidates
+              exceptionnelles. Vous pouvez soumettre une nomination via notre
+              formulaire en ligne pendant la période de nomination du 15 janvier
+              au 15 février 2025.
             </p>
           </div>
 
           <div className="border border-gray-200 rounded-lg p-6">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Comment puis-je suivre les résultats du concours?</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">
+              Comment puis-je suivre les résultats du concours?
+            </h3>
             <p className="text-gray-600">
-              Vous pouvez suivre les résultats en temps réel sur notre plateforme. Les classements sont mis à jour régulièrement, et vous recevrez des notifications si vous vous êtes inscrit à notre newsletter.
+              Vous pouvez suivre les résultats en temps réel sur notre
+              plateforme. Les classements sont mis à jour régulièrement, et vous
+              recevrez des notifications si vous vous êtes inscrit à notre
+              newsletter.
             </p>
           </div>
 
           <div className="border border-gray-200 rounded-lg p-6">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Quels sont les prix pour les gagnantes?</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">
+              Quels sont les prix pour les gagnantes?
+            </h3>
             <p className="text-gray-600">
-              Les gagnantes dans chaque catégorie recevront une reconnaissance publique, un trophée EMPOWER 2025, et un ensemble de ressources pour soutenir leur développement professionnel, y compris des opportunités de mentorat, des formations et une visibilité médiatique.
+              Les gagnantes dans chaque catégorie recevront une reconnaissance
+              publique, un trophée EMPOWER 2025, et un ensemble de ressources
+              pour soutenir leur développement professionnel, y compris des
+              opportunités de mentorat, des formations et une visibilité
+              médiatique.
             </p>
           </div>
         </div>
@@ -348,13 +478,20 @@ const AboutPage = () => {
       {/* CTA Section */}
       <div className="bg-[#2AB4C4]/5 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Restez Informé</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Restez Informé
+          </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Inscrivez-vous à notre newsletter pour recevoir les dernières mises à jour sur le concours EMPOWER 2025
+            Inscrivez-vous à notre newsletter pour recevoir les dernières mises
+            à jour sur le concours EMPOWER 2025
           </p>
           <div className="max-w-md mx-auto">
             <div className="flex">
-              <input type="email" placeholder="Votre adresse email" className="flex-1 px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2AB4C4]" />
+              <input
+                type="email"
+                placeholder="Votre adresse email"
+                className="flex-1 px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2AB4C4]"
+              />
               <button className="px-6 py-3 bg-[#2AB4C4] text-white font-medium rounded-r-lg hover:bg-[#1da3b3] transition-colors">
                 S'inscrire
               </button>
@@ -363,9 +500,7 @@ const AboutPage = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
-export default AboutPage;    
-
-     
+export default AboutPage;
